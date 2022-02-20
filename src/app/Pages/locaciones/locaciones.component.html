@@ -1,0 +1,10 @@
+<h2>Listado de Locaciones</h2>
+<div class="row">
+    <div *ngFor="let item of ListLocaciones" class="card col-md-2"  >
+        <div class="card-body">
+          <h5 class="card-title">{{item.Nombre}}</h5>
+          <p class="card-text">{{item.Tipo}}</p>
+          <a routerLink="/Locaciones/{{item.id}}" class="btn btn-primary">Ver Detalle</a>
+        </div>
+      </div>
+</div>

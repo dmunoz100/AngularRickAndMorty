@@ -1,0 +1,11 @@
+<h1>Listado de Personajes</h1>
+<div class="row">
+    <div *ngFor="let item of ListPersonajes" class="card col-md-3"  >
+        <img [src]="item.Img" class="card-img-top" >
+        <div class="card-body">
+          <h5 class="card-title">{{item.Nombre}}</h5>
+          <p class="card-text">{{item.Estatus}}</p>
+          <a routerLink="/Personajes/{{item.id}}" class="btn btn-primary">Ver Detalle</a>
+        </div>
+      </div>
+</div>
